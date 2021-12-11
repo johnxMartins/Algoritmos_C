@@ -1,10 +1,18 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    double salario, montante, total;
-    char nome;
-    scanf("%s %lf %lf", &nome,&salario, &montante);
-    total = (montante * 15) / 100 + salario;
-    printf("Total = R$ %.2lf\n", total);
+    int N[1000];
+    int T, i, j;
+    scanf("%d", &T);
+    for (i = 0; i < 1000; i++)
+    {
+        N[i] = i % T;
+    }
+    for (i = 0; i < 1000; i++)
+    {
+        printf("N[%d] = %d\n", i, N[i]);
+    }
+
     return 0;
+
 
 }

@@ -1,9 +1,17 @@
-#include <stdio.h> 
+#include<stdio.h>
 int main(){
-    double A, B, C, MEDIA;
-    scanf("%lf %lf %lf", &A, &B, &C);
-    MEDIA = ((A * 2) + (B * 3) + (C * 5)) / 10;
-    printf("MEDIA = %.1lf\n", MEDIA);
+    int vetorN[10]={0};
+    int valor, i;
+    scanf("%d", &valor);
+    vetorN[0] = valor;
+    for (i = 1; i < 10; i++)
+    {
+        valor = valor*2;
+        vetorN[i] = valor;
+    }
+    for (i = 0; i < 10; i++)
+    {
+        printf("N[%d] = %d\n", i, vetorN[i]);
+    }
     return 0;
-
 }

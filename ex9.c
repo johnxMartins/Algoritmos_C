@@ -1,11 +1,15 @@
-#include <stdio.h>
+#include<stdio.h>
 int main(){
-    int NUMBER, HORAS;
-    double SALARY, VHORAS;
-    scanf("%d %d %lf", &NUMBER, &HORAS, &VHORAS);
-    SALARY = (HORAS * VHORAS);
-    printf("NUMBER = %d\n", NUMBER);
-    printf("SALARY = U$ %.2f\n", SALARY);
+    int vetorN[20];
+    int i, j;
+    for (i = 0; i < 20; i++)
+    {
+        scanf("%d", &vetorN[i]);
+    }
+    j = 20;
+    for (i = 20  -1; i >= 0; i--){
+        j = j - 1;
+        printf("N[%d] = %d\n", j, vetorN[i]);
+    }   
     return 0;
-
 }

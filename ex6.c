@@ -1,9 +1,22 @@
 #include <stdio.h>
-int main (){
-    double A, B, MEDIA;
-    scanf("%lf %lf", &A, &B);
-    MEDIA = ((A * 3.5) + (B * 7.5)) /11;
-    printf("MEDIA = %.5lf\n", MEDIA);
+int main(){
+    int vetorX[10]={0};
+    int i;
+    for (i = 0; i < 10; i++)
+    {
+        scanf("%d", &vetorX[i]);
+    }
+    for (i = 0; i < 10; i++)
+    {
+        if (vetorX[i] <= 0)
+        {
+            vetorX[i] = 1;
+            printf("X[%d] = %d\n", i, vetorX[i]);
+        } 
+        else
+        {
+            printf("X[%d] = %d\n", i, vetorX[i]);
+        }
+    }
     return 0;
-
 }

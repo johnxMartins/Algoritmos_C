@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    double pi, volume, valor,raio;
+    pi = 3.14159;
+    valor = 4.0 / 3;
+    scanf("%lf", &raio);
+    raio = raio * raio * raio;
+    volume = valor * pi * raio;
+    printf("VOLUME = %.3lf\n", volume);
+    return 0;
+
+}

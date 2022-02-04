@@ -46,5 +46,29 @@ void TPilha_Insere(TPilha *p, int x)
   else
   {
     p->Topo++;
+    p->Item[p->Topo] = x;
   }
+}
+
+int TPilha_Retira(TPilha *p)
+{
+  int aux;
+  if (TPilha_Vazia(p) == 1)
+  {
+    printf("ERRO: Pilha vazia");
+  }
+  else
+  {
+    aux = p->Item[p->Topo];
+    p->Topo--;
+    return aux;
+  }
+}
+
+int main()
+{
+  TPilha *p = (TPilha *)malloc(sizeof(TPilha));
+  Tpilha
+
+      return 0;
 }

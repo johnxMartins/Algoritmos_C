@@ -4,9 +4,9 @@
 
 typedef struct
 {
-  int Item[MAXTAM];
+  int Item['MAXTAM'];
   int Topo;
-} Tpilha;
+} TPilha;
 
 void TPilha_Inicia(TPilha *p)
 {
@@ -27,7 +27,7 @@ int TPilha_Vazia(TPilha *p)
 
 int TPilha_Cheia(TPilha *p)
 {
-  if (p->Topo == MAXTAM - 1)
+  if (p->Topo == ('MAXTAM') - 1)
   {
     return 1;
   }
@@ -68,7 +68,16 @@ int TPilha_Retira(TPilha *p)
 int main()
 {
   TPilha *p = (TPilha *)malloc(sizeof(TPilha));
-  Tpilha
+  TPilha_Inicia(p);
 
-      return 0;
+  TPilha_Insere(p, 1);
+  TPilha_Insere(p, 2);
+  TPilha_Insere(p, 3);
+
+  int aux;
+
+  aux = TPilha_Retira(p);
+  printf("\n SAIU: %d", aux);
+
+  return 0;
 }

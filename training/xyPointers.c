@@ -15,10 +15,8 @@ int main()
   while (x >= 0)
   {
     scanf("%d%d", &x, &y);
-    if (x < 0)
-    {
-      break;
-    }
+    if (x < 0) break;
+    ponto=(xy *)malloc(sizeof(xy));
     ponto->x = x;
     ponto->y = y;
     ponto->next = NULL;

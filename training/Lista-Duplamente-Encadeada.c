@@ -95,3 +95,21 @@ void apresentarPeloInicio(TLista *pLista)
     printf("--- fim da lista ----\n\n");
   }
 }
+void apresentarPeloFim(TLista *pLista)
+{
+  TNo *aux;
+  if (pLista->fim == NULL)
+  {
+    printf("--- lista vazia --- \n\n");
+  }
+  // Caso a lista nao esteja vazia
+  aux = pLista->fim;
+  while (aux != NULL)
+  {
+    printf("Info = %d\n", aux->info);
+    aux = aux->anterior;
+  }
+  printf("--- fim da lista ---\n\n");
+}
+
+//--------------------------------------------------------------------------

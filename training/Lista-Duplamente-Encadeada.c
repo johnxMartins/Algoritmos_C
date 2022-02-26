@@ -49,3 +49,29 @@ void inserirNoInicio(TLista *pLista)
     pLista->inicio = novoElemento;
   }
 }
+
+void inserirNoFim(TLista *pLista)
+{
+  TNo *novoElemento;
+  novoElemento = new TNo;
+
+  printf("Informe Valor: ");
+  scanf("%d", &novoElemento->info);
+
+  novoElemento->proximo = NULL;
+  novoElemento->anterior = NULL;
+
+  if (pLista->inicio == NULL)
+  {
+    pLista->inicio = novoElemento;
+    pLista->fim = novoElemento;
+  }
+  else
+  {
+    pLista->fim->proximo = novoElemento;
+    novoElemento->anterior = pLista->fim;
+    pLista->fim = novoElemento;
+  }
+}
+
+//-----------------------------------------------------------------------------------

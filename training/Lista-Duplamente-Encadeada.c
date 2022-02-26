@@ -75,3 +75,23 @@ void inserirNoFim(TLista *pLista)
 }
 
 //-----------------------------------------------------------------------------------
+// Funcao que imprime toda a lista
+//
+void apresentarPeloInicio(TLista *pLista)
+{
+  TNo *aux;
+  if (pLista->inicio == NULL)
+  {
+    printf("---- Lista Vazia -----\n\n");
+  }
+  else
+  {
+    aux = pLista->inicio;
+    while (aux != NULL)
+    {
+      printf("Info = %d\n", aux->info);
+      aux = aux->proximo;
+    }
+    printf("--- fim da lista ----\n\n");
+  }
+}

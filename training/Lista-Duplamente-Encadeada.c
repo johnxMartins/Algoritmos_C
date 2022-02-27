@@ -113,3 +113,4 @@ void apresentarPeloFim(TLista *pLista)
 }
 
 //--------------------------------------------------------------------------
+// void consultarPeloInicio (Tlista *pLista)

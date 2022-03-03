@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main(){
     double raio, area, n; 
     scanf("%lf", &raio);

@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main() {
     int valor,troco, cem , cinquenta , vinte , dez , cinco , dois , um;
     scanf("%d",&valor);

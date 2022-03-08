@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 int main()
 {
   double salario, salarioconta, salariototal, salariototal1, salariototal2, salariototal3;

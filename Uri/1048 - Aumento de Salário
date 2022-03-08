@@ -1,7 +1,6 @@
 #include<stdio.h>
 
 int main(){
- 
  float salario;
  scanf("%f", &salario);
  if (salario <= 400.0)

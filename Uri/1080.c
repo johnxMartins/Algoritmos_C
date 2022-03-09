@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main(){
     int numeros[100], i, maior;
 

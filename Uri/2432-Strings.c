@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
 int busca(int *vetor, long long int size, double number)
 {
   if (number > vetor[size - 1])
